@@ -1,9 +1,10 @@
+---
 version: '3.7'
 
 services:
   web:
-    image:  nginx:alpine
+    image: nginx:alpine
     volumes:
-      - ./:/usr/share/nginx/html
+      - ./dist:/usr/share/nginx/html
     ports:
-      - 8080:80
+      - "8080:80"
