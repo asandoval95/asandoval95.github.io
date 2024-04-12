@@ -5,6 +5,6 @@ services:
   web:
     image: nginx:alpine
     volumes:
-      - ./dist:/usr/share/nginx/html
+      - ./docs:/usr/share/nginx/html
     ports:
       - "8080:80"
